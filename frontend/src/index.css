@@ -1,0 +1,71 @@
+@import url('https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;600;700&family=Spectral:wght@400;500;600&display=swap');
+
+:root {
+  --bg: #f6f2eb;
+  --panel: #ffffff;
+  --text: #2b2621;
+  --muted: #6d625a;
+  --border: rgba(43, 38, 33, 0.12);
+  --accent: #1e8e82;
+  --accent-strong: #0f6b63;
+  --accent-glow: rgba(30, 142, 130, 0.15);
+  --warning: #d06f2c;
+  --danger: #c5463d;
+  --shadow: 0 20px 50px rgba(24, 18, 10, 0.08);
+  --radius-lg: 24px;
+  --radius-md: 14px;
+  --radius-sm: 10px;
+  --font-display: 'Space Grotesk', 'Segoe UI', sans-serif;
+  --font-body: 'Spectral', 'Times New Roman', serif;
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  min-height: 100vh;
+  font-family: var(--font-body);
+  color: var(--text);
+  background:
+    radial-gradient(1200px 600px at 10% -10%, rgba(30, 142, 130, 0.25), transparent 60%),
+    radial-gradient(900px 500px at 90% 0%, rgba(245, 150, 98, 0.25), transparent 60%),
+    linear-gradient(180deg, #fbf7f2 0%, #f4f0e9 55%, #efeae1 100%);
+  background-attachment: fixed;
+}
+
+#root {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 32px 24px 56px;
+}
+
+h1,
+h2,
+h3 {
+  font-family: var(--font-display);
+  margin: 0;
+}
+
+p {
+  margin: 0;
+}
+
+button,
+input {
+  font-family: var(--font-display);
+}
+
+::selection {
+  background: var(--accent-glow);
+}
+
+@media (max-width: 900px) {
+  #root {
+    padding: 24px 16px 48px;
+  }
+}
